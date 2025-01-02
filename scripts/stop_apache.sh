@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Stopping Apache server..."
-sudo systemctl stop apache2   # Stop Apache
+echo "Stopping Nginx server..."
+sudo systemctl stop nginx   # Stop nginx

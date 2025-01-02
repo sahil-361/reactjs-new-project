@@ -4,8 +4,8 @@
 sudo apt update -y
 
 # Install Apache2 (apache2)
-sudo apt install -y apache2
+sudo apt install -y nginx
 
 echo "Installing dependencies..."
-# Install nodejs and npm
-sudo apt install -y nodejs npm
+# Install nodejs
+sudo apt install -y nodejs

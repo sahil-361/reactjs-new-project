@@ -1,17 +1,14 @@
 #!/bin/bash
 # start_apache.sh
 
-# Enable Apache to start on boot
-sudo systemctl enable apache2
-
-# Update package list
-sudo apt update -y
-
 # Start Apache service
-sudo systemctl start apache2
+sudo systemctl start nginx
+
+# Enable Apache to start on boot
+sudo systemctl enable nginx
 
 # Check Apache service status
-sudo systemctl status apache2
+sudo systemctl status nginx
 
 
 #!/bin/bash
@@ -19,7 +16,9 @@ sudo systemctl status apache2
 cd /home/ubuntu/my-app
 
 # Install react-scripts (if necessary)
-sudo npm install react-scripts --save
+sudo npm install
 
 # Start the React app
-npm run start  # Or use pm2 to run your React app in the background
+sudo npm start  # Or use pm2 to run your React app in the background
+
+sudo cp -r /home/ubuntu/my-app/build/* /var/www/html/
