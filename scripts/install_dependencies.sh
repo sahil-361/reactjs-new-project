@@ -1,11 +1,11 @@
 #!/bin/bash
 # install_apache.sh
 # Update package list
-sudo yum update -y
+sudo apt update -y
 
-# Install Apache2 (httpd)
-sudo yum install -y httpd
-
+# Install Apache2 (apache2)
+sudo apt install -y apache2
 
 echo "Installing dependencies..."
-sudo yum install -y nodejs npm  # Install node and npm, if necessary
+# Install nodejs and npm
+sudo apt install -y nodejs npm
