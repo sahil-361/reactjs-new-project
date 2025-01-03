@@ -21,12 +21,12 @@ hooks:
 
   # ApplicationStart - Start the Apache server or perform post-install tasks
   ApplicationStart:
-    - location: scripts/start_apache.sh  # Start Apache to serve the app
+    - location: scripts/start_nginx.sh  # Start Apache to serve the app
       timeout: 180
       runas: root
 
   # ApplicationStop - Stop the Apache server or clean up
   ApplicationStop:
-    - location: scripts/stop_apache.sh  # Stop Apache if it is running
+    - location: scripts/stop_nginx.sh  # Stop Apache if it is running
       timeout: 180
       runas: root

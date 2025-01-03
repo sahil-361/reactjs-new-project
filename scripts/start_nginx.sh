@@ -1,15 +1,12 @@
 #!/bin/bash
-# start_apache.sh
-
-# Start Apache service
+# Start the Nginx service
 sudo systemctl start nginx
 
-# Enable Apache to start on boot
+# Enable Nginx to start on boot
 sudo systemctl enable nginx
 
-# Check Apache service status
+# Check Nginx service status
 sudo systemctl status nginx
-
 
 #!/bin/bash
 # Navigate to your React app directory
