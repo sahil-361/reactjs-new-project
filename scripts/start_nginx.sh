@@ -8,7 +8,6 @@ sudo systemctl enable nginx
 # Check Nginx service status
 sudo systemctl status nginx
 
-#!/bin/bash
 # Navigate to your React app directory
 cd /home/ubuntu/my-app
 
@@ -18,4 +17,4 @@ sudo npm install
 # Start the React app
 sudo npm start  # Or use pm2 to run your React app in the background
 
-sudo cp -r /home/ubuntu/my-app/build/* /var/www/html/my-app/
+sudo cp -r /home/ubuntu/my-app/build/* /var/www/html/
