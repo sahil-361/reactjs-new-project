@@ -23,7 +23,7 @@ hooks:
     - location: scripts/start_nginx.sh  # Start Apache to serve the app
       timeout: 180
       runas: root
-
+      
   # ApplicationStop - Stop the Apache server or clean up
   ApplicationStop:
     - location: scripts/stop_nginx.sh  # Stop Apache if it is running
