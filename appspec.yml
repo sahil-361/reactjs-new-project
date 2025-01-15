@@ -2,9 +2,8 @@ version: 0.0
 os: linux
 files:
   # The source directory (e.g., build/) from CodeBuild
-  # should be copied to the Apache web server root
   - source: /
-    destination: /home/ubuntu/my-app  # Apache's default directory for static content
+    destination: /home/ubuntu/my-app
 
 hooks:
   # BeforeInstall - Clean the previous application if needed
